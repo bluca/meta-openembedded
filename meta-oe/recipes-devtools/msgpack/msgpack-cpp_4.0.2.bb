@@ -19,4 +19,8 @@ S = "${WORKDIR}/git"
 
 inherit cmake pkgconfig
 
+ALLOW_EMPTY:${PN} = "1"
+
+RDEPENDS:${PN}-dev = ""
+
 BBCLASSEXTEND += "native nativesdk"
